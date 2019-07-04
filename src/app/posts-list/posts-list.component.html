@@ -1,0 +1,32 @@
+<div class="asc-button">
+    <button (click)="regresar()" mat-button class="autores">Mostrar Autores</button>
+    <button class="asc-button" (click)="changeOrderAsc()" mat-button class="order">Orden Ascendente</button>
+    <button class="desc-button" (click)="changeOrderDesc()" mat-button class="order">Orden Descendente</button>
+</div>
+
+<div>
+    <button mat-raised-button (click)="previosPosts()" class="previo">Previo</button>
+    <button mat-raised-button (click)="siguentesPost()" class="next">Siguiente</button>
+</div>
+
+<mat-card color="primary" class="autor">
+    <mat-card-title class="titulo">
+        <i class="material-icons blue">face</i>Autores
+    </mat-card-title>
+    <mat-card (click)="mostrarPosts()" class="nombre" *ngFor="let post of Post">
+        {{post.nombre}} {{ post.apellido}}
+    </mat-card>
+</mat-card>
+
+<mat-card class="post" *ngFor="let post of Post">
+    <mat-card-title><i class="material-icons blue">description</i> {{post.titulo}}</mat-card-title>
+    <mat-chip-list>
+        <mat-chip>{{post.nombre}} {{post.apellido}} - {{post.email}}</mat-chip>
+    </mat-chip-list>
+    <mat-card-content>
+        <p>{{post.descripcion}}</p>
+        <p>{{post.fecha}}</p>
+    </mat-card-content>
+</mat-card>
+
+<footer></footer>

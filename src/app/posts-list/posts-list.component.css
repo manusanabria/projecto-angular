@@ -1,0 +1,79 @@
+.post {
+    margin: auto;
+    margin-left: 55%;
+    width: 35%;
+    display: block;
+    margin-top: 2rem;
+}
+
+.autor {
+    margin-left: 100px;
+    width: 35%;
+    display: block;
+    margin-top: 2rem;
+    position: absolute;
+    padding-bottom: 2rem;
+}
+
+.autores {
+    background-color: #FFF;
+}
+
+table {
+    width: 100%;
+}
+
+.material-icons.blue {
+    color: #3f51b5;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.nombre {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #85A5FF;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.order {
+    margin: auto;
+    background-color: #FFF;
+    margin-left: 25px;
+}
+
+.asc-button {
+    margin-top: 1rem;
+    margin-left: 30%;
+
+}
+
+.desc-button {
+    margin-top: 1rem;
+    margin-left: 50%;
+}
+
+.next {
+    margin-left: 85%;
+}
+
+.previo {
+    margin-left: 79%;
+    position: absolute;
+
+}
+
+footer {
+    margin-top: 2rem;
+    height: 70px;
+    background-color: #3f51b5;
+}
+
+mat-paginator {
+    width: 65%;
+    margin: auto;
+    margin-top: 2rem;
+}
