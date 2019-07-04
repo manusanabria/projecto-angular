@@ -7,17 +7,10 @@ La aplicación está desarrollada con Angular en su última versión, json-serve
 
 Para ejecutar la aplicación se debe ejecutar el comando "ng serve" en la línea de comandos, en seguida en el explorador ingresar la url "http://localhost:4200/".
 
-## Code scaffolding
+## Instalación de json-server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.- En línea de comandos ejecutar la siguiente sintaxis "npm install -g json-server".
+2.- Escribir el comando "json-server --watch db.json" que nos permitirá ejecutar la REST API, en seguida debemos ingresar la url "http://localhost:3000/" para visualizar el objeto JSON que a su vez mostraremos en la pantalla principal de la aplicación.
 
 ## Running end-to-end tests
 
