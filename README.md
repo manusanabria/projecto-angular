@@ -7,7 +7,7 @@ La aplicación está desarrollada con Angular en su última versión, json-serve
 
 Para ejecutar la aplicación se debe ejecutar el comando "ng serve" en la línea de comandos, en seguida en el explorador ingresar la url "http://localhost:4200/".
 
-## Instalación de json-server
+## Instalación de json-server :computer:
 
 1.- En línea de comandos ejecutar la siguiente sintaxis "npm install -g json-server".
 
