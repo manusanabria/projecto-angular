@@ -13,7 +13,7 @@
     <mat-card-title class="titulo">
         <i class="material-icons blue">face</i>Autores
     </mat-card-title>
-    <mat-card (click)="mostrarPosts()" class="nombre" *ngFor="let post of Post">
+    <mat-card (click)="mostrarPosts(post.id)" class="nombre" *ngFor="let post of Post">
         {{post.nombre}} {{ post.apellido}}
     </mat-card>
 </mat-card>
@@ -28,5 +28,3 @@
         <p>{{post.fecha}}</p>
     </mat-card-content>
 </mat-card>
-
-<footer></footer>

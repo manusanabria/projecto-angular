@@ -48,10 +48,11 @@ export class PostsListComponent implements OnInit {
 
   // Cargar Autores
   cargarAutor() {
-    return this.apiService.getByAutor().subscribe((data: any) => {
-      this.Post = data;
-      console.log(data);
-    });
+    return this.apiService.getPosts().
+      subscribe((data: any) => {
+        this.Post = data;
+        console.log(data);
+      });
   }
 
   // Mostrar Posts orden Ascendente
@@ -73,12 +74,13 @@ export class PostsListComponent implements OnInit {
   }
 
   // Mostrar Posts por Autor
-  mostrarPosts() {
-    return this.apiService.getByAutor()
+  mostrarPosts(id: any) {
+    return this.apiService.getByAutor(id)
       .subscribe((data: {}) => {
         this.Post = data;
-        console.log(data);
+        console.log(id);
       });
+
   }
 
 

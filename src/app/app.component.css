@@ -25,3 +25,9 @@ mat-paginator {
 .material-icons.blue {
     color: #3f51b5;
 }
+
+footer {
+    margin-top: 205px;
+    height: 70px;
+    background-color: #3f51b5;
+}

@@ -24,19 +24,15 @@ export class ApiService {
     }
 
     getnextPosts(): Observable<Post> {
-        return this.http.get<Post>(this.apiURL + '/posts' + '?_page=1&_limit=20')
+        return this.http.get<Post>(this.apiURL + '/posts' + '?_page=2&_sort=fecha&_order=desc')
             .pipe(
                 retry(1),
                 catchError(this.handleError)
             );
     }
 
-    getByAutor(): Observable<Post> {
-        return this.http.get<Post>(this.apiURL + '/posts' + '?id=20&id=19&id=18&id=17&id=16')
-            .pipe(
-                retry(1),
-                catchError(this.handleError)
-            );
+    getByAutor(id: any): Observable<Post> {
+        return this.http.get<Post>(this.apiURL + '/posts' + '?id=' + id);
     }
 
     changeOrderAsc(): Observable<Post> {
