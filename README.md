@@ -10,6 +10,7 @@ Para ejecutar la aplicación se debe ejecutar el comando "ng serve" en la línea
 ## Instalación de json-server
 
 1.- En línea de comandos ejecutar la siguiente sintaxis "npm install -g json-server".
+
 2.- Escribir el comando "json-server --watch db.json" que nos permitirá ejecutar la REST API, en seguida debemos ingresar la url "http://localhost:3000/" para visualizar el objeto JSON que a su vez mostraremos en la pantalla principal de la aplicación.
 
 ## Running end-to-end tests
