@@ -3,7 +3,7 @@
 Esta aplicación muestra un listado de publicaciones además del autor correspondiente a cada una de estas.
 La aplicación está desarrollada con Angular en su última versión, json-server para simular una REST API y Angular Material para el diseño.
 
-## Development server
+## Servidor de Desarrollo
 
 Para ejecutar la aplicación se debe ejecutar el comando "ng serve" en la línea de comandos, en seguida en el explorador ingresar la url "http://localhost:4200/".
 
